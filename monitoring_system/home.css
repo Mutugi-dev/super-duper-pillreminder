@@ -1,0 +1,193 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header styles */
+header {
+    background-color: #3b6f9a;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Landing Section */
+.landing {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/pexels-edward-jenner-4031818.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.landing .intro-text {
+    max-width: 650px;
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.landing .intro-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+
+.landing .intro-text p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Login Section */
+.login-plate {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    margin-top: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.login-plate .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.login-plate .doctor-container,
+.login-plate .patient-container {
+    flex: 1;
+    min-width: 240px;
+    margin: 10px 0;
+}
+
+.login-plate .login-button {
+    background-color: #4b79a1;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+}
+
+.login-plate .login-button:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+}
+
+.login-plate .login-button.doctor-login {
+    background-color: rgb(75, 51, 171);}
+
+.login-plate .login-button.patient-login {
+        background-color: rgb(23, 212, 124); }
+
+
+.login-plate .login-button.doctor-register {
+    background-color: #e74c3c;
+}
+
+.login-plate .login-button.patient-register {
+    background-color: #9b59b6;
+}
+
+/* About Section */
+.about-section {
+    background-color: #f4f6f9;
+    padding: 60px 20px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    font-size: 30px;
+    color: #3b6f9a;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Button Hover Effects */
+button.login-button {
+    transition: 0.3s;
+}
+
+button.login-button:hover {
+    background-color: #ffd700;
+}
